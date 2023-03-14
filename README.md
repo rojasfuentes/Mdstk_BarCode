@@ -5,10 +5,13 @@ workbook = openpyxl.load_workbook(
 **Activate venv**  
 env\Scripts\activate.bat  
 
-El siguiente programa permite buscar información en una base de datos de productos a través de un código de barras. Se utiliza la librería openpyxl para leer la información desde un archivo de Excel y para guardar los resultados en otro archivo de Excel.
+Este es un programa que permite buscar productos en una base de datos de códigos de barras. El usuario ingresa el código de barras del producto que desea buscar y el programa muestra los resultados correspondientes, incluyendo el nombre del producto, la clave, el lote y la fecha de caducidad. Si hay varios resultados, el usuario puede seleccionar el lote deseado y agregar la cantidad de productos que desea buscar. El programa guarda los resultados en un archivo de Excel separado y muestra un mensaje de éxito al usuario.
 
-El usuario ingresa el código de barras a buscar y el programa muestra los resultados correspondientes. Si hay varias opciones de lote para un producto, el usuario puede seleccionar uno de ellos para ver los resultados correspondientes.
+El programa utiliza la librería openpyxl para cargar y guardar archivos de Excel y la librería tkinter para crear la interfaz gráfica de usuario.
 
-Además, el programa guarda los resultados en un archivo de Excel con un nombre que incluye la fecha y hora de la búsqueda, para que cada búsqueda tenga un archivo diferente.
+**Requisitos previos**  
+El programa requiere Python 3 y las siguientes librerías:  
 
+openpyxl  
+tkinter
 
